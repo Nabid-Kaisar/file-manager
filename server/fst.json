@@ -1,0 +1,323 @@
+{
+    "folders": [
+        {
+            "name": "video",
+            "type": "folder",
+            "hasChild": true,
+            "created": 1557727070707,
+            "lastModified": 1557727130707,
+            "subFolder": {
+                "folders": [
+                    {
+                        "name": "Synopi-videos",
+                        "type": "folder",
+                        "hasChild": true,
+                        "created": 1557727130707,
+                        "lastModified": 1557727130707,
+                        "subFolder": {
+                            "folders": [
+                                {
+                                    "name": "Empty Folder",
+                                    "type": "folder",
+                                    "hasChild": false,
+                                    "created": 1557727192666,
+                                    "lastModified": 1557727192666,
+                                    "subFolder": {
+                                        "folders": [],
+                                        "files": [],
+                                        "id": "0-0-0",
+                                        "parentId": "0-0"
+                                    }
+                                },
+                                {
+                                    "name": "Other Videos",
+                                    "type": "folder",
+                                    "hasChild": true,
+                                    "created": 1557727220953,
+                                    "lastModified": 1557727220953,
+                                    "subFolder": {
+                                        "folders": [
+                                            {
+                                                "name": "Urgent Folder",
+                                                "type": "folder",
+                                                "hasChild": false,
+                                                "created": 1557727228628,
+                                                "lastModified": 1557727228628,
+                                                "subFolder": {
+                                                    "folders": [],
+                                                    "files": [
+                                                        {
+                                                            "name": "Car 1572315.mp4",
+                                                            "type": "file",
+                                                            "format": "video/mp4",
+                                                            "created": 1561615346947,
+                                                            "lastModified": 1561612730760,
+                                                            "size": 5707971
+                                                        }
+                                                    ],
+                                                    "id": "0-0-1-0",
+                                                    "parentId": "0-0-1"
+                                                }
+                                            }
+                                        ],
+                                        "files": [
+                                            {
+                                                "name": "aircraft-wing.mp4",
+                                                "type": "file",
+                                                "format": "video/mp4",
+                                                "created": 1561615340864,
+                                                "lastModified": 1561612779282,
+                                                "size": 7920727
+                                            }
+                                        ],
+                                        "id": "0-0-1",
+                                        "parentId": "0-0"
+                                    }
+                                }
+                            ],
+                            "files": [
+                                {
+                                    "name": "keyboard.mp4",
+                                    "type": "file",
+                                    "format": "video/mp4",
+                                    "created": 1561615293780,
+                                    "lastModified": 1561613087357,
+                                    "size": 6356905
+                                },
+                                {
+                                    "name": "keyboard(2),mp4",
+                                    "type": "file",
+                                    "format": "video/mp4",
+                                    "created": 1561615305941,
+                                    "lastModified": 1561613087357,
+                                    "size": 6356905
+                                }
+                            ],
+                            "id": "0-0",
+                            "parentId": "0"
+                        }
+                    },
+                    {
+                        "name": "Streamed Videos",
+                        "type": "folder",
+                        "hasChild": true,
+                        "created": 1557727138629,
+                        "lastModified": 1557727969552,
+                        "subFolder": {
+                            "folders": [
+                                {
+                                    "name": "paper",
+                                    "type": "folder",
+                                    "hasChild": false,
+                                    "created": 1557727969552,
+                                    "lastModified": 1557727969552,
+                                    "subFolder": {
+                                        "folders": [],
+                                        "files": [],
+                                        "id": "0-1-0",
+                                        "parentId": "0-1"
+                                    }
+                                },
+                                {
+                                    "name": "paper2",
+                                    "type": "folder",
+                                    "hasChild": false,
+                                    "created": 1557728340796,
+                                    "lastModified": 1557728340796,
+                                    "subFolder": {
+                                        "folders": [],
+                                        "files": [],
+                                        "id": "0-1-1",
+                                        "parentId": "0-1"
+                                    }
+                                }
+                            ],
+                            "files": [],
+                            "id": "0-1",
+                            "parentId": "0"
+                        }
+                    }
+                ],
+                "files": [],
+                "id": "0",
+                "parentId": "root"
+            }
+        },
+        {
+            "name": "audio",
+            "type": "folder",
+            "hasChild": true,
+            "created": 1557727040707,
+            "lastModified": 1557727337097,
+            "subFolder": {
+                "folders": [
+                    {
+                        "name": "Synopi-Audios",
+                        "type": "folder",
+                        "hasChild": true,
+                        "created": 1557727337097,
+                        "lastModified": 1557727337097,
+                        "subFolder": {
+                            "folders": [
+                                {
+                                    "name": "Empty Folder",
+                                    "type": "folder",
+                                    "hasChild": false,
+                                    "created": 1557727364918,
+                                    "lastModified": 1557727364918,
+                                    "subFolder": {
+                                        "folders": [],
+                                        "files": [],
+                                        "id": "1-0-0",
+                                        "parentId": "1-0"
+                                    }
+                                }
+                            ],
+                            "files": [],
+                            "id": "1-0",
+                            "parentId": "1"
+                        }
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "Audio - Andy_G_Cohen_-_05_-_A_Perceptible_Shift.mp3",
+                        "type": "file",
+                        "format": "audio/mp3",
+                        "created": 1560662351164,
+                        "lastModified": 1557901299329,
+                        "size": 9651929
+                    }
+                ],
+                "id": "1",
+                "parentId": "root"
+            }
+        },
+        {
+            "name": "docs",
+            "type": "folder",
+            "hasChild": false,
+            "created": 1557727020707,
+            "lastModified": 1557727412888,
+            "subFolder": {
+                "folders": [],
+                "files": [
+                    {
+                        "name": "Synchronous Framework Documentation for Functionality Writers.pdf",
+                        "type": "file",
+                        "format": "application/pdf",
+                        "created": 1560664021355,
+                        "lastModified": 1546341703030,
+                        "size": 303778
+                    }
+                ],
+                "id": "2",
+                "parentId": "root"
+            }
+        },
+        {
+            "name": "Images",
+            "type": "folder",
+            "hasChild": false,
+            "created": 1559373007101,
+            "lastModified": 1559373007101,
+            "subFolder": {
+                "folders": [],
+                "files": [
+                    {
+                        "name": "BitBucketSc.png",
+                        "type": "file",
+                        "format": "image/png",
+                        "created": 1560590348036,
+                        "lastModified": 1547361124180,
+                        "size": 154181
+                    }
+                ],
+                "id": "3",
+                "parentId": "root"
+            }
+        },
+        {
+            "name": "hello",
+            "type": "folder",
+            "hasChild": false,
+            "created": 1559373816648,
+            "lastModified": 1559373816648,
+            "subFolder": {
+                "folders": [],
+                "files": [
+                    {
+                        "name": "নীতিমালা.pdf",
+                        "type": "file",
+                        "format": "application/pdf",
+                        "created": 1559373842292,
+                        "lastModified": 1557216503355,
+                        "size": 1094182
+                    }
+                ],
+                "id": "4",
+                "parentId": "root"
+            }
+        }
+    ],
+    "files": [
+        {
+            "name": "context_2.jpg",
+            "type": "file",
+            "format": "image/jpeg",
+            "created": 1559372544110,
+            "lastModified": 1545470500446,
+            "size": 20199
+        },
+        {
+            "name": "Material css.txt",
+            "type": "file",
+            "format": "text/plain",
+            "created": 1559372552564,
+            "lastModified": 1546234891520,
+            "size": 2027
+        },
+        {
+            "name": "SampleAudio_0.4mb.mp3",
+            "type": "file",
+            "format": "audio/mp3",
+            "created": 1559372559604,
+            "lastModified": 1557900560641,
+            "size": 443926
+        },
+        {
+            "name": "SampleVideo_1280x720_20mb.mp4",
+            "type": "file",
+            "format": "video/mp4",
+            "created": 1559372568609,
+            "lastModified": 1543643817900,
+            "size": 21069678
+        },
+        {
+            "name": "sync-web-frameworkd.md",
+            "type": "file",
+            "format": "text/markdown",
+            "created": 1559373018706,
+            "lastModified": 1545465972334,
+            "size": 5367
+        },
+        {
+            "name": "Eloquent_JavaScript.pdf",
+            "type": "file",
+            "format": "application/pdf",
+            "created": 1560665385882,
+            "lastModified": 1541318430856,
+            "size": 2263551
+        },
+        {
+            "name": "47194742_352024598889307_3335118203574550528_n.png",
+            "type": "file",
+            "format": "image/png",
+            "created": 1561450694981,
+            "lastModified": 1543650788649,
+            "size": 47273
+        }
+    ],
+    "id": "root",
+    "parentId": null
+}

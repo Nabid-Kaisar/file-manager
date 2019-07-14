@@ -1,0 +1,169 @@
+{
+    "folders": [
+        {
+            "name": "video",
+            "type": "folder",
+            "hasChild": true,
+            "created": 1557727070707,
+            "lastModified": 1557727130707,
+            "subFolder": {
+                "folders": [
+                    {
+                        "name": "Synopi-videos",
+                        "type": "folder",
+                        "hasChild": true,
+                        "created": 1557727130707,
+                        "lastModified": 1557727130707,
+                        "subFolder": {
+                            "folders": [
+                                {
+                                    "name": "Empty Folder",
+                                    "type": "folder",
+                                    "hasChild": false,
+                                    "created": 1557727192666,
+                                    "lastModified": 1557727192666,
+                                    "subFolder": {
+                                        "folders": [],
+                                        "files": [],
+                                        "id": "0-0-0",
+                                        "parentId": "0-0"
+                                    }
+                                },
+                                {
+                                    "name": "Other Videos",
+                                    "type": "folder",
+                                    "hasChild": true,
+                                    "created": 1557727220953,
+                                    "lastModified": 1557727220953,
+                                    "subFolder": {
+                                        "folders": [
+                                            {
+                                                "name": "Urgent Folder",
+                                                "type": "folder",
+                                                "hasChild": false,
+                                                "created": 1557727228628,
+                                                "lastModified": 1557727228628,
+                                                "subFolder": {
+                                                    "folders": [],
+                                                    "files": [],
+                                                    "id": "0-0-1-0",
+                                                    "parentId": "0-0-1"
+                                                }
+                                            }
+                                        ],
+                                        "files": [],
+                                        "id": "0-0-1",
+                                        "parentId": "0-0"
+                                    }
+                                }
+                            ],
+                            "files": [],
+                            "id": "0-0",
+                            "parentId": "0"
+                        }
+                    },
+                    {
+                        "name": "Streamed Videos",
+                        "type": "folder",
+                        "hasChild": true,
+                        "created": 1557727138629,
+                        "lastModified": 1557727969552,
+                        "subFolder": {
+                            "folders": [
+                                {
+                                    "name": "paper",
+                                    "type": "folder",
+                                    "hasChild": false,
+                                    "created": 1557727969552,
+                                    "lastModified": 1557727969552,
+                                    "subFolder": {
+                                        "folders": [],
+                                        "files": [],
+                                        "id": "0-1-0",
+                                        "parentId": "0-1"
+                                    }
+                                },
+                                {
+                                    "name": "paper2",
+                                    "type": "folder",
+                                    "hasChild": false,
+                                    "created": 1557728340796,
+                                    "lastModified": 1557728340796,
+                                    "subFolder": {
+                                        "folders": [],
+                                        "files": [],
+                                        "id": "0-1-1",
+                                        "parentId": "0-1"
+                                    }
+                                }
+                            ],
+                            "files": [],
+                            "id": "0-1",
+                            "parentId": "0"
+                        }
+                    }
+                ],
+                "files": [],
+                "id": "0",
+                "parentId": "root"
+            }
+        },
+        {
+            "name": "audio",
+            "type": "folder",
+            "hasChild": true,
+            "created": 1557727040707,
+            "lastModified": 1557727337097,
+            "subFolder": {
+                "folders": [
+                    {
+                        "name": "Synopi-Audios",
+                        "type": "folder",
+                        "hasChild": true,
+                        "created": 1557727337097,
+                        "lastModified": 1557727337097,
+                        "subFolder": {
+                            "folders": [
+                                {
+                                    "name": "Empty Folder",
+                                    "type": "folder",
+                                    "hasChild": false,
+                                    "created": 1557727364918,
+                                    "lastModified": 1557727364918,
+                                    "subFolder": {
+                                        "folders": [],
+                                        "files": [],
+                                        "id": "1-0-0",
+                                        "parentId": "1-0"
+                                    }
+                                }
+                            ],
+                            "files": [],
+                            "id": "1-0",
+                            "parentId": "1"
+                        }
+                    }
+                ],
+                "files": [],
+                "id": "1",
+                "parentId": "root"
+            }
+        },
+        {
+            "name": "docs",
+            "type": "folder",
+            "hasChild": false,
+            "created": 1557727020707,
+            "lastModified": 1557727412888,
+            "subFolder": {
+                "folders": [],
+                "files": [],
+                "id": "2",
+                "parentId": "root"
+            }
+        }
+    ],
+    "files": [],
+    "id": "root",
+    "parentId": null
+}

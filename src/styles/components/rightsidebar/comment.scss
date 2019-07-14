@@ -1,0 +1,190 @@
+// comment section style
+%comment {
+    
+    .comments-body {
+        position: relative;
+        overflow: auto;
+        height: calc(100% - 90px);
+        
+        .comment-wrapper {
+            margin: 10px 5px 1px 5px;
+
+        }
+
+        .comment {
+            margin-top: 15px;
+        }
+
+        .comment.followup {
+            margin-top: 0px;
+        }
+
+        // comment time
+        .time {
+            font-size: 11px;
+            margin-top: 2px;
+            color: #999999;
+            margin-right: 5px;
+        }
+
+        .own .time {
+            float: left;
+        }
+
+        .others .time {
+            float: right;
+        }
+
+        // comment user name
+        .name {
+            font-size: 12px;
+            min-width: 35px;
+            text-align: center;
+            margin-right: 5px;
+        }
+
+        .own .name {
+            float: right;
+        }
+
+        .others .name {
+            float: left;
+        }
+
+        // user image avator
+        .avatar {
+            margin-right: 5px;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            background-size: cover;
+            margin: 0 auto;
+            background-position: center center;
+        }
+
+        .own .avatar {
+            float: right;
+        }
+
+        .others .avatar {
+            float: left;
+        }
+
+        // comment text
+        .text {
+            margin-top: 5px;
+            vertical-align: top;
+            border-radius: 5px;
+            padding: 7px 10px;
+            line-height: 1.28;
+            position: relative;
+            .inner {
+
+                p {
+                    margin: 0px;
+                    font-size: 14px;
+                }
+
+                &::before,
+                &::after {
+                    position: absolute;
+                    top: 13px;
+                    border: 4px solid transparent;
+                    content: ' ';
+                    height: 0;
+                    width: 0;
+                    pointer-events: none;
+                    margin-top: -5px;
+                }
+
+                &:hover>.removebtn {
+                    visibility: visible;
+                }
+            } 
+
+            .removebtn {
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                top: 7px;
+                right: 2px;
+                visibility: hidden;
+                cursor: pointer;
+            }
+        }
+
+        .own .text {
+            margin-right: 50px;
+            margin-left: 5px;
+            color: white;
+            background-color: #1A73E7;
+        }
+
+        .others .text {
+            margin-right: 5px;
+            margin-left: 50px;
+            color: #4B4F56;
+            background-color: #F1F0F0;
+        }
+
+        //margin
+        .comment.followup .text {
+            margin-top: 0px;
+        }
+
+        //right commnet section cursor style
+        .comment.own .text .inner::before,
+        .comment.own .text .inner::after {
+            left: 100%;
+            right: auto;
+            border-right-color: transparent;
+            border-left-color: #1A73E7;
+        }
+
+        .comment.own.followup .text .inner::before,
+        .comment.own.followup .text .inner::after {
+            border-left-color: transparent;
+        }
+
+        //left commnet section cursor style
+        .comment.others .text .inner::before,
+        .comment.others .text .inner::after {
+            right: 100%;
+            left: auto;
+            border-right-color: #F1F0F0;
+            border-left-color: transparent;
+        }
+
+        .comment.others.followup .text .inner::before,
+        .comment.others.followup .text .inner::after {
+            border-right-color: transparent;
+        }
+    }
+
+    .comments-footer {
+        
+        .comment-print {
+            padding: 10px;
+
+            i {
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+
+        .comment-input textarea{
+            border-style: solid;
+            border-color: #fff;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            border-top-color: #EBEBEB;
+            resize: none;
+            width: calc(100% - 5px);
+            height: 44px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

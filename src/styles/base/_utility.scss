@@ -1,0 +1,161 @@
+/*---------------------------------------------------
+                Headling Style
+----------------------------------------------------*/
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+/*---------------------------------------------------
+                Margin Style
+----------------------------------------------------*/
+@for $i from 0 through 4 {
+  .m-#{$i * 5} {
+    margin: 5px * $i;
+  }
+}
+
+/*--- margin top ---*/
+@for $i from 0 through 4 {
+  .mt-#{$i * 5} {
+    margin-top: 5px * $i;
+  }
+}
+
+/*--- margin buttom ---*/
+@for $i from 0 through 4 {
+  .mb-#{$i * 5} {
+    margin-bottom: 5px * $i;
+  }
+}
+
+/*--- margin right ---*/
+@for $i from 0 through 4 {
+  .mr-#{$i * 5} {
+    margin-right: 5px * $i;
+  }
+}
+
+/*--- margin left ---*/
+@for $i from 0 through 4 {
+  .ml-#{$i * 5} {
+    margin-left: 5px * $i;
+  }
+}
+
+/*---------------------------------------------------
+                Padding Style
+----------------------------------------------------*/
+@for $i from 0 through 4 {
+  .p-#{$i * 5} {
+    padding: 5px * $i;
+  }
+}
+
+/*--- padding top ---*/
+@for $i from 0 through 4 {
+  .pt-#{$i * 5} {
+    padding-top: 5px * $i;
+  }
+}
+
+/*--- padding buttom ---*/
+@for $i from 0 through 4 {
+  .pb-#{$i * 5} {
+    padding-bottom: 5px * $i;
+  }
+}
+
+/*--- padding right ---*/
+@for $i from 0 through 4 {
+  .pr-#{$i * 5} {
+    padding-right: 5px * $i;
+  }
+}
+
+/*--- padding left ---*/
+@for $i from 0 through 4 {
+  .pl-#{$i * 5} {
+    padding-left: 5px * $i;
+  }
+}
+
+/*---------------------------------------------------
+                Common Style
+----------------------------------------------------*/
+.width-140 {
+  width: 140px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+// float style
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-fix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+//block style
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+//position
+.p-fixed {
+  position: fixed !important;
+}
+
+//body main shadow
+.b-shadow {
+  box-shadow: 0 0 10px 0 silver;
+}

@@ -1,0 +1,96 @@
+%addtocard {
+
+    .addtocard-content {
+        padding: 10px 0px;
+        .addtocard-header {
+            padding: 10px 5px;
+            ul li {
+                float: left;
+                a {
+                    display: flex;
+                    margin: 3px;
+                    padding: 6px 10px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: bold;
+                    border: 1px solid #dcdcdc;
+                    color: rgba(0,0,0,.87);
+                    border-radius: 2px;
+                    align-items: center;
+
+                    i {
+                        font-size: 16px;
+                        margin-right: 3px;
+                        color: gray;
+                    }
+                }
+            }
+        }
+
+        .addtocard-body {
+            overflow: auto;
+
+            dl {
+                margin: 0;
+                padding: 0;
+                
+                &:hover {
+                    background-color: #f0f0f0;
+                }
+            }
+            .card-content {
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                margin: 2px;
+
+                .card-image img {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                .card-text {
+                    margin-left: 10px;
+
+                    p {
+                        margin: 0;
+                        font-size: 13px;
+                        line-height: 12px;
+                    }
+                    span {
+                        font-size: 13px;
+                        text-transform: capitalize;
+                        color: silver;
+                    }
+                }
+            }
+        }
+
+        .addtocard-footer {
+            padding: 5px 0;
+            margin: 3px 0;
+
+            .total-file-size {
+                font-size: 10px;
+                color: gray;
+                padding: 5px 0;
+                text-transform: capitalize;
+            }
+
+            .clear-file-list {
+                font-size: 12px;
+                display: block;
+                cursor: pointer;
+                padding: 5px 10px;
+
+                &:hover {
+                    border-color: white;
+                    color: #000000;
+                    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+                }
+            }
+        }
+
+    }
+
+}

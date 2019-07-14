@@ -1,0 +1,11 @@
+.custom-dialog {
+    @include mdc-dialog-min-width(350px);
+    input {
+        display: block;
+        padding: 5px;
+    }
+    footer button {
+        @include mdc-button-container-fill-color(#551A8B);
+        @include mdc-button-ink-color(#fff);
+    }
+}

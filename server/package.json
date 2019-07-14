@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server of live_file_manger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.js",
+    "live_file_manager"
+  ],
+  "author": "kaisar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "flat": "^4.1.0",
+    "image-size": "^0.7.4",
+    "multer": "^1.4.1"
+  }
+}

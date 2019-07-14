@@ -1,0 +1,23 @@
+// top label set for folder and card
+.top-label {
+
+    .label {
+        display: inline-block;
+        position: absolute;
+        top: -12px;
+        right: 7px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 100px;
+        font-size: 8px;
+        padding: 1px 3px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        color: white;
+        text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black;
+        font-weight: bolder;
+        font-size: 8px;
+        border-radius: 3px;
+    }
+}

@@ -1,0 +1,40 @@
+/* @import '../../node_modules/npm-font-open-sans/open-sans.css'; */
+@import "./base/base";
+
+/* Top app bar */
+@import "@material/chips/mdc-chips";
+
+/* Material for drawer */
+@import "@material/list/mdc-list";
+@import "@material/drawer/mdc-drawer";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/elevation/mdc-elevation";
+@import "@material/fab/mdc-fab";
+
+/* material layout and content */
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/card/mdc-card";
+
+/* Material tab bar active */
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
+
+/* Material Dialog active */
+@import "@material/dialog/mdc-dialog";
+@import "@material/button/mdc-button";
+
+@import "@material/snackbar/mdc-snackbar";
+
+/* import basic components */
+@import "./components/topappbar";
+@import "./components/leftsidebar";
+@import "./components/search";
+@import "./components/notfound.scss";
+@import "./components/folderview";
+@import "./components/cardview";
+@import "./components/rightsidebar/rightsidebar";
+@import "./components/contextmenu";
+@import "./components/dialog";
+@import "./components/snackbar";

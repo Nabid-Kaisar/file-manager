@@ -1,0 +1,38 @@
+@import "./info";
+@import "./comment";
+@import "./addtocard";
+@import "./footer";
+
+// Right side bar content
+.rightside-container {
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    right: 0;
+    background-color: #fff;
+
+    .header-body-container {
+        height: calc(100vh - 115px);
+        position: relative;
+    }
+
+    .commentsEmpty {
+        text-align: center;
+        color: gray;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    
+    //info extended
+    @extend %info;
+
+     //comment extended
+     @extend %comment;
+
+     //addtocard extended
+     @extend %addtocard;
+
+    //side footer extended
+    @extend %footer;
+}

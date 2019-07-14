@@ -1,0 +1,47 @@
+// folder view css
+.main-body-container {
+    padding: 10px 0px;
+    // width: calc(100% - 370px);
+    width: calc(100vw - 580px);
+    height: calc(100vh - 84px);
+    overflow-y: auto;
+    
+    .typeSeparator {
+      color: rgba(0,0,0,.34);
+      font-size: 13px;
+      margin: 10px;
+      font-weight: 500;
+    }
+    
+    .folder-item {
+      position: relative;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      margin: 10px;
+      cursor: pointer;
+  
+      table .icon i {
+        margin-left: 10px;
+        color: #8F8F8F;
+        font-size: 20px;
+      }
+  
+      table .name-wrapper {
+        max-width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 18px;
+
+        span {
+          color: rgba(0, 0, 0, 0.72);
+          margin-left: 5px;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  

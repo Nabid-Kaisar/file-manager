@@ -1,0 +1,143 @@
+// Default setup for drawer active
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  overflow: auto;
+  height: 100%;
+}
+
+// .app-bar {
+//   position: absolute;
+// }
+
+// only apply this style if below top app bar
+.mdc-top-app-bar {
+  z-index: 7;
+}
+
+/*=================================================================
+                      Left sidebar Design
+==================================================================*/
+.sidebar-menu {
+
+  @include mdc-drawer-width(230px);
+    // menu color setup
+    .custom-menu .mdc-list-item,
+    .custom-menu .mdc-list-item i {
+      @include mdc-list-item-secondary-text-ink-color(blue);
+      @include mdc-list-item-primary-text-ink-color(#000000);
+    }
+  }
+
+.menu-tree-wrapper {
+  padding-right: 10px;
+  padding-top: 10px;
+
+  li {
+    position: relative;
+    transition: all .3s ease;
+
+    .menu-content {
+      display: flex;
+      align-items: center;
+      line-height: 18px;
+      cursor: pointer;
+      padding-left: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-top-right-radius: 14px;
+      border-bottom-right-radius: 14px;
+
+      &:hover {
+        background-color: #E8F0FE;
+      }
+
+      &.selected {
+        background-color: #E8F0FE;
+        
+        i.submenu-flug {
+          transform: rotate(90deg);
+          color: #185FC0;
+        }
+
+        i.folder-icon {
+          color: #185FC0;
+        }
+        a {
+          color: #185FC0;
+        }
+      }
+
+      &:hover .extra-flug {
+        visibility: visible;
+      }
+
+      i {
+        font-size: 20px;
+
+        &.submenu-flug {
+          transition: all .3s ease;
+          color: #6f6f6f;
+        }
+
+        &.folder-icon {
+          color: #8F8F8F;
+          margin-right: 5px;
+        }
+      }
+      a {
+        font-size: 13px;
+        line-height: 28px;
+        padding: 1px 3px 1px 2px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.72);
+        min-width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .extra-flug {
+      position: absolute;
+      right: 5px;
+      visibility: hidden;
+    }
+
+    ul li .menu-content {
+      padding-left: 28px;
+    }
+
+    // submenu padding
+    ul li ul li .menu-content {
+      padding-left: 44px;
+    }
+
+    ul li ul li ul li .menu-content {
+      padding-left: 60px;
+    }
+
+    ul li ul li ul li ul li .menu-content {
+      padding-left: 76px;
+    }
+    
+  }
+
+  // submenu show
+  .submenu.submenu--hide {
+    visibility: visible;
+    position: static;
+    display: none;
+    left: auto;
+    top: auto;
+    z-index: auto;
+  }
+  .submenu.submenu--show {
+    display: block;
+  }
+
+}  

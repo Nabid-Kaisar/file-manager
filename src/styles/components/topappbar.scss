@@ -1,0 +1,81 @@
+// Top App Bar Design
+.custom-top-app-bar {
+    // logo image
+    img {
+        width: 100px;
+        display: block;
+    }
+
+    // Top appbar chips
+    .custom-top-chips {
+        @include mdc-chip-height(34px);
+        @include mdc-chip-horizontal-padding(18px);
+    }
+
+    .create-file-button-area {
+      position: relative;
+    }
+
+    // submenu
+    .appbar-submenu-area {
+      position: absolute;
+      top: 8px;
+      left: 0px;
+      width: 260px;
+      background-color: #fff;
+      z-index: 2;
+
+      ul {
+        padding: 5px 0px;
+      }
+
+      ul > li:hover {
+        background-color: rgba(68,68,68,.10);
+      }
+
+      li a {
+        display: block;
+        color: #444;
+        text-transform: capitalize;
+        padding: 5px 15px;
+
+        .topbar-submenu-icon {
+          // position: relative;
+          // top: 5px;
+          // left: 5px;
+          font-size: 20px;
+          vertical-align: middle;
+          margin-right: 15px;
+
+          &.submenu-child {
+            float: right;
+            margin-right: 0px;
+          }
+        }
+      }
+
+      .submenu {
+        position: relative;
+
+        ul {
+          display: none;
+          position: absolute;
+          top: 0px;
+          left: 100%;
+          background: #fff;
+          width: 190px;
+        }
+      }
+      li.submenu:hover>ul {
+        display: block;
+      }
+      
+    }
+
+    // user Image
+    .user-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }

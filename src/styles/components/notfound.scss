@@ -1,0 +1,16 @@
+.not-found-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    i {
+        text-align: center;
+        font-size: 5em;
+        color: silver;
+    }
+
+    p {
+        color: #909090;
+    }
+}

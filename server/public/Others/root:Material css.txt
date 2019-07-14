@@ -1,0 +1,133 @@
+CSS Formatting Guidelines for synopi live server
+===================================================
+
+**1. All CSS Divided into some section and all section name will be commented.
+
+Example:
+
+/*--------------------------------------------------------------
+      Login Section Style
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+      Navbar Section Style
+--------------------------------------------------------------*/
+
+**2. Add an extra space between two styles.
+
+Example:
+
+//don't do this
+.login-page {
+    color: red;
+}
+.main-page {
+    color: blue;
+}
+
+//Best Practice
+
+.login-page {
+    color: red;
+}
+
+.main-page {
+    color: blue;
+}
+
+**3. Reduce duplicate code.
+
+Example:
+
+.login-page {
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.main-page {
+    color: blue;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+//Best Practice
+
+.login-page,
+.main-page {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.login-page {
+    color: red;
+}
+
+.main-page {
+    color: blue;
+}
+
+**4. Write more common or global css. 
+
+Example:
+
+.login-page {
+    color: red;
+    margin: 10px;
+    float: right;
+}
+
+//Best Practice
+
+/* all color declare section */
+
+.color-red {
+    color: red;
+}
+
+.color-blue {
+    color: blue;
+}
+
+.bg-gray {
+    background: gray;
+}
+
+/* all margin declare section */
+
+.m-0 {
+    margin: 0px;
+}
+
+.m-5 {
+    margin: 5px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+//same for float right
+
+**5. Section comment will be:
+
+/*--------------------------------------------------------------
+      Login Section Style
+--------------------------------------------------------------*/
+
+and subsection comment will be:
+
+/*---------Login subsection Style-----------*/
+
+**6. Always One component shoud have one separate css file.
+
+Example: for Navbar.
+
+    component-name: Navbar.js and it's style file name navbar.css
+
+**7. Try to include All fonts and Icons via css.
+
+**8. 

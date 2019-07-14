@@ -1,0 +1,49 @@
+%footer {
+    .side-footer {
+
+        .tab-area ul {
+            display: flex;
+            overflow: hidden;
+            border-top: 1px solid #ddd;
+    
+            li {
+                float: left;
+                padding: 10px 25px;
+                position: relative;
+                cursor: pointer;
+    
+                &:hover a {
+                    color: #551A8B;
+                }
+                
+                &.active {
+                    border-top: 2px solid #551A8B;
+    
+                    a {
+                    color: #551A8B;
+                    }
+                }
+    
+                a {
+                    color: #7D7D7D;
+                }
+    
+                .badge {
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+    
+                    span {
+                        background-color: #1A73E7;
+                        color: white;
+                        font-weight: bold;
+                        border-radius: 50%;
+                        font-size: 8px;
+                        padding: 2px 5px;
+                        box-shadow: 0 1px 5px 0 rgba(0,0,0,0.3);
+                    }
+                }
+            }
+        }
+    }
+}

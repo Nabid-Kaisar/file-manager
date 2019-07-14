@@ -1,0 +1,58 @@
+// Card view Design
+.card-item {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  .card-image {
+    display: block;
+    width: 140px;
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    transition: background 0.3s ease;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .card-title {
+    overflow: hidden;
+    text-align: center;
+    padding: 6px 0;
+    white-space: nowrap;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    .card-name {
+      font-size: 13px;
+      max-width: 96px;
+      display: inline-block;
+      vertical-align: top;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 19px;
+
+      span {
+        color: silver;
+        margin-left: 5px;
+      }
+    }
+
+    .card-icon {
+      margin-left: 4px;
+      display: inline-block;
+
+      i {
+        font-size: 14px;
+        color: silver;
+      }
+    }
+  }
+}
