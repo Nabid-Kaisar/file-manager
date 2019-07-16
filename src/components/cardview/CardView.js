@@ -4,7 +4,7 @@ import axios from "axios";
 import photo from "../../images/image-icon.png";
 import audio from "../../images/audio-icon.png";
 import text from "../../images/text-icon.svg";
-import video from "../../images/video-icon.svg";
+import video from "../../images/video-icon.png";
 import pdf from "../../images/pdf-icon.svg";
 import otherFile from "../../images/other-file.svg";
 
