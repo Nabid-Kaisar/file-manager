@@ -20,7 +20,8 @@ class Info extends Component {
 
   convertTimeMilliToDate = timeMilli => {
     if (timeMilli === "") return "";
-    let d = new Date(timeMilli).toString();
+    let d = new Date(timeMilli).toUTCString();
+    // console.log(d.toUTCString());
     return d;
   };
 
@@ -44,7 +45,7 @@ class Info extends Component {
       this.context.state.clickedLastModified
     );
     let size = this.convertByteSize(this.context.state.clickedFileSize);
-    let hrefLink = '#';
+    let hrefLink = "#";
     return (
       <React.Fragment>
         <div className="header-body-container">
@@ -129,7 +130,9 @@ class Info extends Component {
                     <tr>
                       <td className="name">Height</td>
                       <td className="value">
-                        <a href={hrefLink}>{this.context.state.clickedHeight}</a>
+                        <a href={hrefLink}>
+                          {this.context.state.clickedHeight}
+                        </a>
                       </td>
                     </tr>
 
@@ -143,7 +146,7 @@ class Info extends Component {
                     <tr>
                       <td className="name">Copyright</td>
                       <td className="value">
-                        <a href={hrefLink}></a>
+                        <a href={hrefLink} />
                       </td>
                     </tr>
                   </tbody>
@@ -153,7 +156,7 @@ class Info extends Component {
             <div className="tag-section" id="tag-sectionId">
               <div className="tags">
                 <ul className="tag-lists">
-                  <li>
+                  {/* <li>
                     mos<span className="tag-item-close">&#10006;</span>
                   </li>
                   <li>
@@ -164,7 +167,7 @@ class Info extends Component {
                   </li>
                   <li>
                     newyork<span className="tag-item-close">&#10006;</span>
-                  </li>
+                  </li> */}
                   <li>
                     <input
                       type="text"
