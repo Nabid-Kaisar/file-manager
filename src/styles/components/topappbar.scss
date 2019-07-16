@@ -91,3 +91,16 @@
   font-size: 13px;
   font-weight: 600;
 }
+
+.mdc-dialog__title.get-link-dialog-title {
+  word-break: break-all;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cross-icon {
+  position: absolute;
+  right: 3px;
+  top: 6px;
+  color: #b30000;
+}

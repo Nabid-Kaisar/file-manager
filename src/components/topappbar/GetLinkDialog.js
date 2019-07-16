@@ -101,16 +101,25 @@ class Dialog extends Component {
         >
           <div className="mdc-dialog__container">
             <div className="mdc-dialog__surface">
-              <h2 className="mdc-dialog__title" id="my-dialog-title">
+              <h3
+                className="mdc-dialog__title get-link-dialog-title"
+                id="my-dialog-title"
+              >
                 {name}
-                <button
+
+                {/* <button
                   style={{ position: "relative", left: "66px" }}
                   data-mdc-dialog-action="no"
                 >
                   &#10539;
-                </button>
-              </h2>
-
+                </button> */}
+              </h3>
+              <i
+                class="demo-menu material-icons cross-icon"
+                data-mdc-dialog-action="no"
+              >
+                close
+              </i>
               <div className="mdc-dialog__content" id="my-dialog-content">
                 <input
                   id="get-link-inp"
