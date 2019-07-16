@@ -43,7 +43,7 @@ export default class Download extends Component {
           onClick={this.handleRename}
           className="demo-menu material-icons mdc-top-app-bar__navigation-icon mr-5"
         >
-          update
+          colorize
         </i>
         <RenameDialog
           ref={dia => (this.dialogComp = dia)}

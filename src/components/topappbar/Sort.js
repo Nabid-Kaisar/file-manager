@@ -18,7 +18,8 @@ class Sort extends Component {
   };
 
   sort = e => {
-    this.buttonAction[e.target.name]();
+    console.log(e.target.id);
+    this.buttonAction[e.target.id]();
   };
 
   sortRequest = (sortType, snackBarNotification) => {
@@ -31,7 +32,7 @@ class Sort extends Component {
       .then(res => {
         //open subFolder with server response as arg
         this.props.folderViewComp.openSubFolder(res.data.sortedDirStruc);
-        
+
         this.props.updateSnackBarProps(
           `Sorted by ${snackBarNotification}`,
           "open",
@@ -43,32 +44,49 @@ class Sort extends Component {
 
   sortButton = (buttonName, sortOrder) => {
     return (
-      <button name={buttonName} onClick={this.sort}>
+      <React.Fragment>
         {sortOrder === "ascend" ? (
-          <React.Fragment>&#8593;</React.Fragment>
+          <i
+            id={buttonName}
+            onClick={this.sort}
+            className="demo-menu material-icons md-13 mr-5"
+          >
+            arrow_upward
+          </i>
         ) : (
-          <React.Fragment>&#8595;</React.Fragment>
+          <i
+            id={buttonName}
+            onClick={this.sort}
+            className="demo-menu material-icons md-13 mr-5"
+          >
+            arrow_downward
+          </i>
         )}
-      </button>
+      </React.Fragment>
     );
   };
 
   render() {
     return (
       <React.Fragment>
-        <span> &nbsp;Sort by- </span>
+        <i className="material-icons mr-5">sort</i>
+        <span className="mr-5">
+          <span className="sort-criteria">name: </span>
+          {this.sortButton("sortByNameAscend", "ascend")}
+          {this.sortButton("sortByNameDescend", "descend")}
+        </span>
 
-        <span>Name:</span>
-        {this.sortButton("sortByNameAscend", "ascend")}
-        {this.sortButton("sortByNameDescend", "descend")}
+        <span className="mr-5">
+          <span className="sort-criteria">size: </span>
+          {this.sortButton("sortBySizeAscend", "ascend")}
+          {this.sortButton("sortBySizeDescend", "descend")}
+        </span>
 
-        <span>Size:</span>
-        {this.sortButton("sortBySizeAscend", "ascend")}
-        {this.sortButton("sortBySizeDescend", "descend")}
-
-        <span>Modified:</span>
-        {this.sortButton("sortByDateAscend", "ascend")}
-        {this.sortButton("sortByDateDescend", "descend")}
+        <span className="mr-5">
+          <span className="sort-criteria">modified: </span>
+          {this.sortButton("sortByDateAscend", "ascend")}
+          {this.sortButton("sortByDateDescend", "descend")}
+        </span>
       </React.Fragment>
     );
   }

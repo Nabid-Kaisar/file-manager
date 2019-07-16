@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-//image import
-// import first from "../../images/1.jpg";
-// import second from "../../images/2.png";
-// import third from "../../images/3.jpg";
-// import doc from "../../images/doc.png";
-// import xls from "../../images/xls.png";
+import photo from "../../images/image-icon.png";
+import audio from "../../images/audio-icon.png";
+import text from "../../images/text-icon.svg";
+import video from "../../images/video-icon.svg";
+import pdf from "../../images/pdf-icon.svg";
+import otherFile from "../../images/other-file.svg";
 
 import { GlobalState } from "../stateProvider/StateProvider";
 
@@ -94,6 +94,31 @@ class CardView extends Component {
   };
 
   cardView = (bgimage, fileName, fileFormat, icon, idx) => {
+    if (!bgimage) {
+      switch (fileFormat.split("/")[0]) {
+        case "image":
+          bgimage = photo;
+          break;
+        case "video":
+          bgimage = video;
+          break;
+        case "audio":
+          bgimage = audio;
+          break;
+        case "text":
+          bgimage = text;
+          break;
+        case "application":
+          if (fileFormat.split("/")[1] === "pdf") {
+            bgimage = pdf;
+          } else {
+            bgimage = otherFile;
+          }
+          break;
+        default:
+          bgimage = otherFile;
+      }
+    }
     return (
       <div
         className="card-item width-140 float-left mdc-elevation--z3"
@@ -101,11 +126,11 @@ class CardView extends Component {
         onMouseDown={e => this.handleFileClick(e, fileName, fileFormat)}
         key={idx}
       >
-        <div className="top-label">
+        {/* <div className="top-label">
           <div className="label" style={{ backgroundColor: "green" }}>
             APPROVED
           </div>
-        </div>
+        </div> */}
         <div
           className="card-image"
           style={{ backgroundImage: "url(" + bgimage + ")" }}
@@ -174,14 +199,7 @@ class CardView extends Component {
       <React.Fragment>
         {/* For Image Card */}
         <div className="typeSeparator">Files</div>
-        <div className="card-area float-fix">
-          {/* {this.cardView(first, 'photo-16', 'JPEG', 'chat_bubble_outline')}
-                    {this.cardView(second, 'photo-17', 'JPG', 'insert_link')}
-                    {this.cardView(doc, 'Office Word', 'DOC', null)}
-                    {this.cardView(third, 'photo-16', 'JPEG', 'chat_bubble_outline')}
-                    {this.cardView(xls, 'Office Excel 07', 'XLS', null)} */}
-          {this.state.fileViewArr}
-        </div>
+        <div className="card-area float-fix">{this.state.fileViewArr}</div>
 
         <video
           ref={vid => (this.showVid = vid)}

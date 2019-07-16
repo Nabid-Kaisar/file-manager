@@ -59,9 +59,20 @@ export default class Buttons extends Component {
   render() {
     return (
       <React.Fragment>
-        <button onClick={this.handleBack}>Previous Dir</button>
-        <button onClick={this.handleForward}>Forward</button>
-        <div>{this.state.rootDirMsg}</div>
+        <section className="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+          <i
+            onClick={this.handleBack}
+            className="demo-menu material-icons md-18 mdc-top-app-bar__navigation-icon mr-5"
+          >
+            arrow_back
+          </i>
+          <i
+            onClick={this.handleForward}
+            className="demo-menu material-icons mdc-top-app-bar__navigation-icon mr-5"
+          >
+            arrow_forward
+          </i>
+        </section>
       </React.Fragment>
     );
   }

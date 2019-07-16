@@ -89,11 +89,11 @@ class FolderView extends Component {
         onClick={() => this.handleClicks(subFolderObj, foldername)}
         key={idx}
       >
-        <div className="top-label">
+        {/* <div className="top-label">
           <div className="label" style={{ backgroundColor: "green" }}>
             APPROVED
           </div>
-        </div>
+        </div> */}
         <table>
           <tbody>
             <tr>

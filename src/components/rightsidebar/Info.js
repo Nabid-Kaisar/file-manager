@@ -143,7 +143,7 @@ class Info extends Component {
                     <tr>
                       <td className="name">Copyright</td>
                       <td className="value">
-                        <a href={hrefLink}>Creative Commons Zero</a>
+                        <a href={hrefLink}></a>
                       </td>
                     </tr>
                   </tbody>

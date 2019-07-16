@@ -1,5 +1,5 @@
 {
-  "name": "synopi-filerun",
+  "name": "live-file-manager",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -118,10 +118,6 @@
       "web.jsx",
       "jsx",
       "node"
-    ],
-    "watchPlugins": [
-      "/home/mithun/work-place/synopi-filerun/node_modules/jest-watch-typeahead/filename.js",
-      "/home/mithun/work-place/synopi-filerun/node_modules/jest-watch-typeahead/testname.js"
     ]
   },
   "babel": {
