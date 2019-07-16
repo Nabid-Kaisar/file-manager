@@ -39,7 +39,12 @@ export default class Download extends Component {
   render() {
     return (
       <React.Fragment>
-        <button onClick={this.handleRename}>Rename</button>
+        <i
+          onClick={this.handleRename}
+          className="demo-menu material-icons mdc-top-app-bar__navigation-icon mr-5"
+        >
+          update
+        </i>
         <RenameDialog
           ref={dia => (this.dialogComp = dia)}
           selectedItem={this.props.selectedItem}

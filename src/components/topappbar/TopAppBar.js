@@ -203,12 +203,12 @@ class TopAppBar extends Component {
               folderViewComp={this.props.folderViewComp}
               updateSnackBarProps={this.props.updateSnackBarProps}
             />
-            <button
+            {/* <button
               className="demo-menu material-icons mdc-top-app-bar__navigation-icon"
               aria-label="Print this page"
             >
               more_vert
-            </button>
+            </button> */}
             <button
               className="demo-menu material-icons mdc-top-app-bar__navigation-icon"
               aria-label="Print this page"

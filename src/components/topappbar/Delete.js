@@ -31,6 +31,13 @@ export default class Download extends Component {
   };
 
   render() {
-    return <button onClick={this.handleDelete}>Delete</button>;
+    return (
+      <i
+        className="demo-menu material-icons mdc-top-app-bar__navigation-icon mr-5"
+        onClick={this.handleDelete}
+      >
+        delete
+      </i>
+    );
   }
 }

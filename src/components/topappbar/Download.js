@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import packageJson from "../../../package.json";
 
 export default class Download extends Component {
@@ -12,6 +13,10 @@ export default class Download extends Component {
   };
 
   render() {
-    return <button onClick={this.handleDownload}>Download</button>;
+    return (
+      <i className="demo-menu material-icons mdc-top-app-bar__navigation-icon mr-5" onClick={this.handleDownload} >
+        cloud_download
+      </i>
+    );
   }
 }

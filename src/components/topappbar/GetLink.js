@@ -10,7 +10,12 @@ export default class GetLink extends Component {
   render() {
     return (
       <React.Fragment>
-        <button onClick={this.handleGetLink}>Get Link</button>
+        <i
+          onClick={this.handleGetLink}
+          className="demo-menu material-icons mdc-top-app-bar__navigation-icon mr-5"
+        >
+          link
+        </i>
         <GetLinkDialog
           ref={dia => (this.getLinkDialogComp = dia)}
           fileInfo={this.props}
